@@ -1,0 +1,144 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* --color-bg: 255 255 255;
+  --color-box: 255 255 255;
+  --color-footer-bg: 154 154 154;
+  --color-bg-section: 17 24 39;
+  --box-border: 229 231 235;
+  --enac-bg-4: 254 194 35;
+  --box-sd: 226 232 240 / 0.5;
+  --heading-1: 23 37 84;
+  --heading-2: 31 41 55;
+  --heading-3: 55 65 81; */
+  --color-bg: 3 7 18;
+  --color-box: 17 24 39;
+  --box-border: 243 244 246 / 0.1;
+  --color-footer-bg: 17 24 39;
+  --color-bg-section: 3 7 18;
+  --box-sd: transparent;
+  --heading-1: 255 255 255;
+  --heading-2: 243 244 246;
+  --heading-3: 209 213 219;
+  --nav-bg: 37 47 62;
+  --subNav-bg: 7 30 61;
+  --btn-bg: 2 76 170;
+
+  /* Variables pour les polices */
+  --font-anton: 'Anton', sans-serif;
+  --font-archivo: 'Archivo Black', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-lato-light: 300;
+  --font-lato-regular: 400;
+  --font-archivo-bold: 700;
+  --font-lato-bold: 700;
+  --font-lato-black: 900;
+}
+
+html.dark {
+  --color-bg: 3 7 18;
+  --color-box: 17 24 39;
+  --box-border: 243 244 246 / 0.1;
+  --color-footer-bg: 17 24 39;
+  --color-bg-section: 3 7 18;
+  --box-sd: transparent;
+  --heading-1: 255 255 255;
+  --heading-2: 243 244 246;
+  --heading-3: 209 213 219;
+  --nav-bg: 37 47 62;
+  --subNav-bg: 7 30 61;
+  --btn-bg: 2 76 170;
+}
+
+@layer utilities {
+  .bg-body {
+    background-color: rgb(var(--color-bg));
+  }
+  .bg-box-bg {
+    background-color: rgb(var(--color-box));
+  }
+  .bg-footer-bg {
+    background-color: rgb(var(--color-footer-bg));
+  }
+  .bg-bg-section {
+    background-color: rgb(var(--color-bg-section));
+  }
+  .text-heading-1 {
+    color: rgb(var(--heading-1));
+  }
+  .text-heading-2 {
+    color: rgb(var(--heading-2));
+  }
+  .text-heading-3 {
+    color: rgb(var(--heading-3));
+  }
+  .enac-bg-1 {
+    color: #D97C2B;
+  }
+  .enac-text {
+    color: #F7941D;
+  }
+  .enac-bg {
+    background-color: #F7941D;
+  }
+  .enac-bg-2 {
+    color: rgba(254,194,35,255);
+  }
+  .enac-bg-3 {
+    color: rgba(254,176,50,255);
+  }
+  /* .bg-enac-bg-4 {
+    background-color: rgba(254,194,35,255);
+  } */
+  .text-enac-bg-4 {
+    background-color: rgba(var(--enac-bg-4));
+  }
+  .bg-links {
+    color: rgb(var(--color-bg-section));
+  }
+  .bg-nav {
+    background-color: rgb(var(--nav-bg));
+  }
+  .bg-subNav {
+    background-color: rgb(var(--subNav-bg));
+  }
+  .bg-btn {
+    background-color: rgb(var(--btn-bg));
+  }
+
+  /* Utilitaires pour les polices */
+  .font-anton {
+    font-family: var(--font-anton);
+  }
+  .font-archivo {
+    font-family: var(--font-archivo);
+  }
+  .font-archivo-bold {
+    font-family: var(--font-archivo-bold);
+  }
+  .font-lato {
+    font-family: var(--font-lato);
+  }
+  .font-lato-light {
+    font-weight: var(--font-lato-light);
+  }
+  .font-lato-regular {
+    font-weight: var(--font-lato-regular);
+  }
+  .font-lato-bold {
+    font-weight: var(--font-lato-bold);
+  }
+  .font-lato-black {
+    font-weight: var(--font-lato-black);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-lato);
+}
